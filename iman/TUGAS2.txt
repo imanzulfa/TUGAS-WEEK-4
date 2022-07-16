@@ -1,0 +1,301 @@
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic (master)
+$ mkdir iman
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic (master)
+$ git add .
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic (master)
+$ touch README.md
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic (master)
+$ git add .
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic (master)
+$ echo halo perkenalkan aku halaman utama >README.md
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic (master)
+$ cat README.md
+halo perkenalkan aku halaman utama
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/TKJ_SMKM_1_Ajb/git-basic/.git/
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic (master)
+$ git commit -m "first commit"
+[master (root-commit) d331204] first commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+ create mode 100644 second.txt
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic (master)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic (master)
+$ rm README.md
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic (master)
+$ git add .
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic (master)
+$ cd iman
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ touch README.md
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git add .
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ echo halo perkenalkan aku halaman utama >README.md
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    ../README.md -> README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git add .
+warning: in the working copy of 'iman/README.md', LF will be replaced by CRLF the next time Git touches it
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    ../README.md
+        new file:   README.md
+
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git commit -m "first commit"
+[master ae7a30d] first commit
+ 2 files changed, 1 insertion(+)
+ delete mode 100644 README.md
+ create mode 100644 iman/README.md
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ cat README.md
+hello world
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git checkout
+M       iman/README.md
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git checkout README.md
+Updated 1 path from the index
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ cat README.md
+halo perkenalkan aku halaman utama
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git branch
+* master
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git branch cv
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git branch
+  cv
+* master
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git checkout cv
+Switched to branch 'cv'
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ touch cv.txt
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git add .
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ echo ini adalah file CV
+ini adalah file CV
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git commit -m "initial CV"
+[cv ef5afc7] initial CV
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 iman/cv.txt
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git status
+On branch cv
+nothing to commit, working tree clean
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ echo ini adalah file CV >cv.txt
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git add .
+warning: in the working copy of 'iman/cv.txt', LF will be replaced by CRLF the next time Git touches it
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git commit -m "initial CV"
+[cv b2c9761] initial CV
+ 1 file changed, 1 insertion(+)
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git commit -m "umbrella"
+On branch cv
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   cv.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git add .
+warning: in the working copy of 'iman/cv.txt', LF will be replaced by CRLF the next time Git touches it
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git commit -m "pt sumsang"
+[cv d191cbf] pt sumsang
+ 1 file changed, 1 insertion(+)
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git add .
+warning: in the working copy of 'iman/cv.txt', LF will be replaced by CRLF the next time Git touches it
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git commit -m "sayid"
+[cv 8ab91f7] sayid
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git add .
+warning: in the working copy of 'iman/cv.txt', LF will be replaced by CRLF the next time Git touches it
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git status
+On branch cv
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   cv.txt
+
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        iman/cv.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git commit
+Aborting commit due to empty commit message.
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git checkout
+M       iman/cv.txt
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        iman/cv.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git commit -m "update master pertama"
+[cv b07b4de] update master pertama
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git status
+On branch cv
+nothing to commit, working tree clean
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (cv)
+$ git checkout master
+Switched to branch 'master'
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git log
+commit ae7a30de27f10b0824a83065500c1c4e8c03b55a (HEAD -> master)
+Author: imanzulfa <imanzulfa27@gmail.com>
+Date:   Sat Jul 16 15:09:35 2022 +0700
+
+    first commit
+
+commit d3312048ef30273bdcf10e95f978888f682c6ee4
+Author: imanzulfa <imanzulfa27@gmail.com>
+Date:   Sat Jul 16 15:06:15 2022 +0700
+
+    first commit
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git commit -m "update master pertama"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git add .
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ dir
+README.md
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git merge
+fatal: No remote for the current branch.
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git merge cv
+Updating ae7a30d..b07b4de
+Fast-forward
+ iman/cv.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 iman/cv.txt
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git remote set-url origin https://github.com/imanzulfa/TUGAS-WEEK-4.git
+error: No such remote 'origin'
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git remote add origin https://github.com/imanzulfa/TUGAS-WEEK-4.git
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (26/26), 2.22 KiB | 81.00 KiB/s, done.
+Total 26 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/imanzulfa/TUGAS-WEEK-4.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+TKJ_SMKM_1_Ajb@DESKTOP-A84NU0K MINGW64 ~/git-basic/iman (master)
+$
