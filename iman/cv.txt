@@ -1,2 +1,3 @@
 ini adalah file CV
 1.umbrella
+2.pt sumsang
